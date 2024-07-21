@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "lintdoc",
-  description: "整理平时开发规范，提升开发效率用",
+  description: "整理开发规范，提升开发效率",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
