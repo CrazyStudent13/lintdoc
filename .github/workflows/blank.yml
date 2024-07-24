@@ -51,4 +51,4 @@ jobs:
         uses: easychen/github-action-server-chan@main
         with:
           sendkey: ${{ secrets.SERVER_J }}
-          title: '规则书更新完毕！Ciallo～(∠・ω< )⌒★'
+          title: '开发规则书更新完毕！Ciallo～(∠・ω< )⌒★'
