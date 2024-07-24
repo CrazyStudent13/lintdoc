@@ -18,6 +18,12 @@ export default defineConfig({
           { text: '代码规范', link: '/codeLint' },
           { text: 'API约定规范', link: '/apiLint' }
         ]
+      },
+      {
+        text: '工具整理',
+        items: [
+          { text: 'vscode插件', link: '/vscode插件' }
+        ]
       }
     ],
 
