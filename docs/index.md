@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "开发规范整合"
-  tagline: 更好的规范，更快的速度，更标准的流程，更稳定的更新
+  tagline: 追求规范，高效，稳定的流程
   actions:
     - theme: brand
       text: 前端代码规范
