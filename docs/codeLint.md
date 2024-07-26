@@ -89,16 +89,39 @@ onMounted(()=>{
 
 ### 使用async await获取数据
 
+这种规范只是推荐使用，`then()`这种链式调用和`try()catch()`的捕获用法，本质上并没有什么区别。
+
+可以酌情区分使用，两者不区分优先度，按照个人习惯使用。
+
 ```js
-/** 
-* 接口请求 
-* @param req 接口api 
-* @param params 参数 
-*/ 
+// try  catch的写法
 const table = reactive({
+    data: [],
+    loading: false,
     request: async(params:any) =>{
-        const res = await req(params) 
-        return Promise.resolve(res) 
+        try { 
+            table.loading = true 
+            const res = await req(params) 
+            return Promise.resolve(res) 
+        } catch (error: any) { 
+            console.log('error：', error)
+        } finally {
+            table.loading = false
+        }
+    }
+})
+
+// then的链式写法
+const table = reactive({
+    data: [],
+    loading: false,
+    request: async(params:any) =>{
+      	table.loading = true 
+        req(params).then((res:any)=>{
+            table.data = res
+        }).finally(()=>{
+           table.loading = false
+        })
     }
 })
 ```
