@@ -15,8 +15,9 @@ export default defineConfig({
       {
         text: '规范整理',
         items: [
+          { text: '设计规范', link: '/designLint' },
           { text: '代码规范', link: '/codeLint' },
-          { text: 'API约定规范', link: '/apiLint' }
+          { text: '接口规范', link: '/apiLint' }
         ]
       },
       {
