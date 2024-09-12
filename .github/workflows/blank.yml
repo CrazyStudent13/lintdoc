@@ -44,7 +44,7 @@ jobs:
           # 用户
           REMOTE_USER: 'root'
           # 目标地址
-          TARGET: '/usr/local/lintdoc'
+          TARGET: '/server/website/lintdoc'
     
       # 推送信息到微信
       - name: 推送信息到微信
