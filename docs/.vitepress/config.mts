@@ -23,9 +23,10 @@ export default defineConfig({
       {
         text: '工具整理',
         items: [
-          { text: 'vscode插件', link: '/vscode插件' }
+          { text: 'vscode插件', link: '/vscode插件' },
+          { text: '资源整合', link: '/资源整合' }
         ]
-      }
+      },
     ],
 
     socialLinks: [

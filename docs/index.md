@@ -19,6 +19,7 @@ hero:
 features:
   - title: 规范整合
     details: 稳定的规范，好用的插件，简约实用的设计技巧
+    link: /codeLint
   - title: 资源整合
     details: 整合日常开发资源，好用的组件，工具库
   - title: 项目整合
