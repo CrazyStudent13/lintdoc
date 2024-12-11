@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,30 +7,34 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '主页', link: '/' },
-      { text: '关于', link: '/other/technicalSupport' }
+      { text: "主页", link: "/" },
+      { text: "关于", link: "/other/technicalSupport" },
     ],
 
     sidebar: [
       {
-        text: '规范整理',
+        text: "规范整理",
         items: [
-          { text: '设计规范', link: '/designLint' },
-          { text: '代码规范', link: '/codeLint' },
-          { text: '接口规范', link: '/apiLint' }
-        ]
+          { text: "设计规范", link: "/devLint/designLint" },
+          { text: "代码规范", link: "/devLint/codeLint" },
+          { text: "接口规范", link: "/devLint/apiLint" },
+        ],
       },
       {
-        text: '工具整理',
+        text: "工具整理",
         items: [
-          { text: 'vscode插件', link: '/vscode插件' },
-          { text: '资源整合', link: '/资源整合' }
-        ]
+          { text: "vscode插件", link: "/toolsLint/vscode插件" },
+          { text: "资源整合", link: "/toolsLint/资源整合" },
+        ],
+      },
+      {
+        text: "测试整理",
+        items: [{ text: "个人支付", link: "/testLint/个人支付" }],
       },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/CrazyStudent13/lintdoc' }
-    ]
-  }
-})
+      { icon: "github", link: "https://github.com/CrazyStudent13/lintdoc" },
+    ],
+  },
+});
